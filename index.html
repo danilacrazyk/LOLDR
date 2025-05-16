@@ -10,13 +10,6 @@
       background: linear-gradient(to bottom, #fff8e7, #ffe4e1);
       padding: 30px;
       color: #2c2c2c;
-      overflow-x: hidden;
-      animation: fadeIn 2s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
     }
 
     .card {
@@ -44,19 +37,12 @@
       margin: 20px auto;
       border-radius: 15px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      animation: float 4s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
     }
 
     h1 {
       color: #c97b00;
       text-align: center;
       font-size: 2rem;
-      animation: fadeIn 2s ease;
     }
 
     .note {
@@ -65,7 +51,6 @@
       font-weight: bold;
       color: #dc143c;
       margin-top: 10px;
-      animation: fadeIn 3s ease;
     }
 
     p {
@@ -88,9 +73,11 @@
       text-align: right;
     }
 
-    audio {
+    iframe {
       display: block;
       margin: 20px auto;
+      border: none;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -100,10 +87,10 @@
     <h1>Дорогая Рита Куйруковна!</h1>
     <div class="note">Открытка с огромной благодарностью и любовью</div>
     <img src="IMG_1305.jpeg" alt="Фото">
-    <audio controls autoplay loop>
-      <source src="song.mp3" type="audio/mpeg">
-      Ваш браузер не поддерживает аудио.
-    </audio>
+
+    <iframe frameborder="0" style="border-style: none;" width="100%" height="240"
+      src="https://zvuk.com/embed/track?id=63388582"></iframe>
+
     <p>
       С огромной благодарностью вспоминаю всё, чему вы меня научили — и не только в математике.
       Вы стали для меня не просто преподавателем, а настоящим наставником, человеком, к которому можно было обратиться не только с задачами по алгебре, но и с задачами по жизни.
